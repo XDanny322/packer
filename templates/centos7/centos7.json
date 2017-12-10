@@ -1,0 +1,71 @@
+{
+    "builders": [
+        {
+            "boot_command": [
+                "<up><tab> text ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg<enter><wait>"
+            ],
+            "disk_size": "60000",
+            "guest_os_type": "RedHat_64",
+            "http_directory": "../../templates/centos7",
+            "iso_checksum": "{{ user `checksum` }}",
+            "iso_checksum_type": "md5",
+            "iso_url": "{{ user `iso` }}",
+            "keep_registered": true,
+            "output_directory": "{{ user `output_dir` }}",
+            "shutdown_command": "/sbin/halt -p",
+            "skip_export": true,
+            "ssh_password": "packer",
+            "ssh_port": 22,
+            "ssh_username": "root",
+            "ssh_wait_timeout": "600s",
+            "type": "virtualbox-iso",
+            "vboxmanage": [
+                [
+                    "modifyvm",
+                    "{{.Name}}",
+                    "--memory",
+                    "2048"
+                ],
+                [
+                    "modifyvm",
+                    "{{.Name}}",
+                    "--cpus",
+                    "2"
+                ],
+                [
+                    "modifyvm",
+                    "{{.Name}}",
+                    "--audio",
+                    "none"
+                ],
+                [
+                    "modifyvm",
+                    "{{.Name}}",
+                    "--nic1",
+                    "nat"
+                ],
+                [
+                    "modifyvm",
+                    "{{.Name}}",
+                    "--nic2",
+                    "hostonly",
+                    "--hostonlyadapter2",
+                    "VirtualBox Host-Only Ethernet Adapter"
+                ]
+            ],
+            "vm_name": "{{ user `custom_vm_name` }}"
+        }
+    ],
+    "provisioners": [
+        {
+            "script": "../../templates/centos7/post_install.sh",
+            "type": "shell"
+        }
+    ],
+    "variables": {
+        "checksum": "5848f2fd31c7acf3811ad88eaca6f4aa",
+        "instance_count": "",
+        "iso": "http://linuxsoft.cern.ch/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1708.iso",
+        "output_dir": ""
+    }
+}

@@ -1,0 +1,1 @@
+http://kappataumu.com/articles/creating-an-Ubuntu-VM-with-packer.html
