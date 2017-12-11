@@ -3,7 +3,7 @@
 
 echo "Setting username to be: $USER"
 
-PACKER_CACHE_DIR="/tmp"
+export PACKER_CACHE_DIR="/tmp"
 echo "Setting Packer cache to /tmp"
 
 echo "Starting For loop for creating VMs"
