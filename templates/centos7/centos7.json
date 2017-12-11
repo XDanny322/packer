@@ -35,12 +35,6 @@
                 [
                     "modifyvm",
                     "{{.Name}}",
-                    "--audio",
-                    "none"
-                ],
-                [
-                    "modifyvm",
-                    "{{.Name}}",
                     "--nic1",
                     "nat"
                 ],
@@ -50,7 +44,7 @@
                     "--nic2",
                     "hostonly",
                     "--hostonlyadapter2",
-                    "VirtualBox Host-Only Ethernet Adapter"
+                    "{{ user `hostonly_vbox_name` }}"
                 ]
             ],
             "vm_name": "{{ user `custom_vm_name` }}"
@@ -66,6 +60,7 @@
         "checksum": "5848f2fd31c7acf3811ad88eaca6f4aa",
         "instance_count": "",
         "iso": "http://linuxsoft.cern.ch/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1708.iso",
-        "output_dir": ""
+        "output_dir": "",
+        "hostonly_vbox_name" : ""
     }
 }

@@ -40,6 +40,7 @@ For ( $instance_count=1 ; $instance_count -le 1 ; $instance_count++) {
     .\packer.exe build -force `
        -var "output_dir=C:\\Users\\${windows_username}\\VirtualBox VMs\\Packer-CentOS-Instance-${instance_count}" `
        -var "custom_vm_name=Packer-CentOS-Instance-${instance_count}" `
+       -var "hostonly_vbox_name=VirtualBox Host-Only Ethernet Adapter" `
        ..\..\templates\centos7\centos7.json
 
 
