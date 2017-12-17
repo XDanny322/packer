@@ -8,7 +8,7 @@ echo "Setting Packer cache to /tmp"
 
 echo "Starting For loop for creating VMs"
 
-for instance_count in 1 
+for instance_count in 1 2 3 
 do
     kickstart_file="../../templates/centos7/ks.cfg"
 
