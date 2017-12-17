@@ -1,0 +1,65 @@
+{
+    "builders": [
+        {
+            "communicator": "winrm",
+            "disk_size": "{{user `disk_size`}}",
+            "floppy_files": [
+                "..\\..\\templates\\win2k6\\Autounattend.xml",
+                "..\\..\\templates\\win2k6\\winrm.ps1"
+            ],
+            "guest_additions_mode": "{{ user `guest_additions_mode` }}",
+            "guest_os_type": "Windows2016_64",
+            "headless": "{{ user `headless` }}",
+            "iso_checksum": "{{ user `iso_checksum` }}",
+            "iso_checksum_type": "md5",
+            "iso_url": "{{ user `iso_url` }}",
+            "keep_registered": true,
+            "output_directory": "{{ user `output_dir` }}",
+            "shutdown_command": "shutdown /s /t 10 /f /d p:4:1 /c \"Packer Shutdown\"",
+            "shutdown_timeout": "15m",
+            "skip_export": true,
+            "type": "virtualbox-iso",
+            "vboxmanage": [
+                [
+                    "modifyvm",
+                    "{{.Name}}",
+                    "--memory",
+                    "2048"
+                ],
+                [
+                    "modifyvm",
+                    "{{.Name}}",
+                    "--cpus",
+                    "2"
+                ],
+                [
+                    "modifyvm",
+                    "{{.Name}}",
+                    "--nic1",
+                    "nat"
+                ],
+                [
+                    "modifyvm",
+                    "{{.Name}}",
+                    "--nic2",
+                    "hostonly",
+                    "--hostonlyadapter2",
+                    "VirtualBox Host-Only Ethernet Adapter"
+                ]
+            ],
+            "vm_name": "{{ user `custom_vm_name` }}",
+            "winrm_password": "password",
+            "winrm_timeout": "12h",
+            "winrm_username": "user"
+        }
+    ],
+    "variables": {
+        "custom_vm_name": "",
+        "disk_size": "61440",
+        "guest_additions_mode": "attach",
+        "headless": "false",
+        "iso_checksum": "18a4f00a675b0338f3c7c93c4f131beb",
+        "iso_url": "http://care.dlservice.microsoft.com/dl/download/1/6/F/16FA20E6-4662-482A-920B-1A45CF5AAE3C/14393.0.160715-1616.RS1_RELEASE_SERVER_EVAL_X64FRE_EN-US.ISO",
+        "output_dir": ""
+    }
+}
