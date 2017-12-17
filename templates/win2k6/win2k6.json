@@ -5,6 +5,7 @@
             "disk_size": "{{user `disk_size`}}",
             "floppy_files": [
                 "{{ user `custom_autounattend` }}",
+                "{{ user `custom_enable_rdp` }}",
                 "{{ user `custom_winrm` }}"
             ],
             "guest_additions_mode": "{{ user `guest_additions_mode` }}",
@@ -55,6 +56,7 @@
     ],
     "variables": {
         "custom_autounattend": "",
+        "custom_enable_rdp": "",
         "custom_vm_name": "",
         "custom_winrm": "",
         "disk_size": "61440",
