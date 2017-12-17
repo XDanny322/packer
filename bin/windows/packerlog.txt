@@ -1,0 +1,217 @@
+2017/12/17 01:31:00 [INFO] Packer version: 1.1.1
+2017/12/17 01:31:00 Packer Target OS/Arch: windows amd64
+2017/12/17 01:31:00 Built with Go Version: go1.9
+2017/12/17 01:31:00 Using internal plugin for amazon-chroot
+2017/12/17 01:31:00 Using internal plugin for amazon-ebssurrogate
+2017/12/17 01:31:00 Using internal plugin for triton
+2017/12/17 01:31:00 Using internal plugin for amazon-ebsvolume
+2017/12/17 01:31:00 Using internal plugin for googlecompute
+2017/12/17 01:31:00 Using internal plugin for lxc
+2017/12/17 01:31:00 Using internal plugin for alicloud-ecs
+2017/12/17 01:31:00 Using internal plugin for amazon-instance
+2017/12/17 01:31:00 Using internal plugin for parallels-iso
+2017/12/17 01:31:00 Using internal plugin for hyperv-vmcx
+2017/12/17 01:31:00 Using internal plugin for vmware-iso
+2017/12/17 01:31:00 Using internal plugin for vmware-vmx
+2017/12/17 01:31:00 Using internal plugin for amazon-ebs
+2017/12/17 01:31:00 Using internal plugin for docker
+2017/12/17 01:31:00 Using internal plugin for file
+2017/12/17 01:31:00 Using internal plugin for lxd
+2017/12/17 01:31:00 Using internal plugin for oneandone
+2017/12/17 01:31:00 Using internal plugin for openstack
+2017/12/17 01:31:00 Using internal plugin for qemu
+2017/12/17 01:31:00 Using internal plugin for virtualbox-iso
+2017/12/17 01:31:00 Using internal plugin for cloudstack
+2017/12/17 01:31:00 Using internal plugin for hyperv-iso
+2017/12/17 01:31:00 Using internal plugin for null
+2017/12/17 01:31:00 Using internal plugin for oracle-oci
+2017/12/17 01:31:00 Using internal plugin for parallels-pvm
+2017/12/17 01:31:00 Using internal plugin for profitbricks
+2017/12/17 01:31:00 Using internal plugin for virtualbox-ovf
+2017/12/17 01:31:00 Using internal plugin for azure-arm
+2017/12/17 01:31:00 Using internal plugin for digitalocean
+2017/12/17 01:31:00 Using internal plugin for windows-restart
+2017/12/17 01:31:00 Using internal plugin for windows-shell
+2017/12/17 01:31:00 Using internal plugin for ansible
+2017/12/17 01:31:00 Using internal plugin for shell
+2017/12/17 01:31:00 Using internal plugin for shell-local
+2017/12/17 01:31:00 Using internal plugin for puppet-server
+2017/12/17 01:31:00 Using internal plugin for salt-masterless
+2017/12/17 01:31:00 Using internal plugin for chef-client
+2017/12/17 01:31:00 Using internal plugin for chef-solo
+2017/12/17 01:31:00 Using internal plugin for file
+2017/12/17 01:31:00 Using internal plugin for powershell
+2017/12/17 01:31:00 Using internal plugin for puppet-masterless
+2017/12/17 01:31:00 Using internal plugin for ansible-local
+2017/12/17 01:31:00 Using internal plugin for converge
+2017/12/17 01:31:00 Using internal plugin for checksum
+2017/12/17 01:31:00 Using internal plugin for googlecompute-export
+2017/12/17 01:31:00 Using internal plugin for vsphere-template
+2017/12/17 01:31:00 Using internal plugin for artifice
+2017/12/17 01:31:00 Using internal plugin for vagrant
+2017/12/17 01:31:00 Using internal plugin for vagrant-cloud
+2017/12/17 01:31:00 Using internal plugin for docker-tag
+2017/12/17 01:31:00 Using internal plugin for vsphere
+2017/12/17 01:31:00 Using internal plugin for alicloud-import
+2017/12/17 01:31:00 Using internal plugin for amazon-import
+2017/12/17 01:31:00 Using internal plugin for docker-import
+2017/12/17 01:31:00 Using internal plugin for docker-save
+2017/12/17 01:31:00 Using internal plugin for shell-local
+2017/12/17 01:31:00 Using internal plugin for atlas
+2017/12/17 01:31:00 Using internal plugin for compress
+2017/12/17 01:31:00 Using internal plugin for docker-push
+2017/12/17 01:31:00 Using internal plugin for manifest
+2017/12/17 01:31:00 Attempting to open config file: C:\Users\hlai\AppData\Roaming\packer.config
+2017/12/17 01:31:00 [WARN] Config file doesn't exist: C:\Users\hlai\AppData\Roaming\packer.config
+2017/12/17 01:31:00 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[profitbricks:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-profitbricks digitalocean:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-digitalocean oneandone:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oneandone oracle-oci:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oracle-oci openstack:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-openstack null:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-null virtualbox-iso:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-iso cloudstack:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-cloudstack hyperv-iso:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-iso parallels-pvm:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-pvm virtualbox-ovf:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-ovf azure-arm:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-azure-arm amazon-chroot:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-chroot alicloud-ecs:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-alicloud-ecs parallels-iso:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-iso amazon-ebs:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebs file:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-file amazon-ebssurrogate:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebssurrogate amazon-ebsvolume:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebsvolume googlecompute:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-googlecompute amazon-instance:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-instance vmware-iso:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-iso vmware-vmx:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-vmx triton:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-triton lxd:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-lxd docker:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-docker hyperv-vmcx:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-vmcx qemu:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-qemu lxc:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-lxc] PostProcessors:map[manifest:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-manifest docker-tag:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-tag alicloud-import:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-alicloud-import amazon-import:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-amazon-import atlas:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-atlas compress:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-compress checksum:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-checksum artifice:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-artifice vsphere:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere docker-save:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-save docker-push:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-push shell-local:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-shell-local googlecompute-export:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-googlecompute-export vsphere-template:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere-template vagrant:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant vagrant-cloud:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant-cloud docker-import:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-import] Provisioners:map[salt-masterless:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-salt-masterless windows-restart:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-restart ansible:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible file:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-file converge:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-converge shell-local:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell-local puppet-server:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-server shell:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell puppet-masterless:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-masterless chef-solo:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-solo powershell:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-powershell ansible-local:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible-local windows-shell:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-shell chef-client:C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-client]}
+2017/12/17 01:31:00 Setting cache directory: C:\TEMP
+2017/12/17 01:31:00 Loading builder: virtualbox-iso
+2017/12/17 01:31:00 Plugin could not be found. Checking same directory as executable.
+2017/12/17 01:31:00 Current exe path: C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe
+2017/12/17 01:31:00 Creating plugin client for path: C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe
+2017/12/17 01:31:00 Starting plugin: C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe []string{"C:\\_AppLarge\\GitHub_internet\\XDanny322\\packer\\bin\\windows\\packer.exe", "plugin", "packer-builder-virtualbox-iso"}
+2017/12/17 01:31:00 Waiting for RPC address for: C:\_AppLarge\GitHub_internet\XDanny322\packer\bin\windows\packer.exe
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 [INFO] Packer version: 1.1.1
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Packer Target OS/Arch: windows amd64
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Built with Go Version: go1.9
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Attempting to open config file: C:\Users\hlai\AppData\Roaming\packer.config
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 [WARN] Config file doesn't exist: C:\Users\hlai\AppData\Roaming\packer.config
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Setting cache directory: C:\TEMP
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 args: []string{"packer-builder-virtualbox-iso"}
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Plugin minimum port: 10000
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Plugin maximum port: 25000
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Plugin address: tcp 127.0.0.1:10000
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Waiting for connection...
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Serving a plugin connection...
+2017/12/17 01:31:00 ui: virtualbox-iso output will be in this color.
+2017/12/17 01:31:00 ui: 
+2017/12/17 01:31:00 Build debug mode: false
+2017/12/17 01:31:00 Force build: true
+2017/12/17 01:31:00 On error: 
+2017/12/17 01:31:00 Preparing build: virtualbox-iso
+2017/12/17 01:31:00 Waiting on builds to complete...
+2017/12/17 01:31:00 Starting build run: virtualbox-iso
+2017/12/17 01:31:00 Running builder: virtualbox-iso
+2017/12/17 01:31:00 [INFO] (telemetry) Starting builder virtualbox-iso
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 [DEBUG] builder/virtualbox: VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 VBoxManage path: C:\Program Files\Oracle\VirtualBox\VBoxManage.exe
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 VBoxManage --version output: 5.1.30r118389
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 VirtualBox version: 5.1.30
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Found Default Guest Additions ISO: C:\Program Files\Oracle\VirtualBox/VBoxGuestAdditions.iso
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Guest additions URL: file:///C:/Program%20Files/Oracle/VirtualBox/VBoxGuestAdditions.iso
+2017/12/17 01:31:00 ui: ==> virtualbox-iso: Downloading or copying Guest additions
+2017/12/17 01:31:00 ui:     virtualbox-iso: Downloading or copying: file:///C:/Program%20Files/Oracle/VirtualBox/VBoxGuestAdditions.iso
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Acquiring lock to download: file:///C:/Program%20Files/Oracle/VirtualBox/VBoxGuestAdditions.iso
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Parsed URL: &url.URL{Scheme:"file", Opaque:"", User:(*url.Userinfo)(nil), Host:"", Path:"/C:/Program Files/Oracle/VirtualBox/VBoxGuestAdditions.iso", RawPath:"", ForceQuery:false, RawQuery:"", Fragment:""}
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 [DEBUG] Using local file: /C:/Program Files/Oracle/VirtualBox/VBoxGuestAdditions.iso
+2017/12/17 01:31:00 ui: ==> virtualbox-iso: Downloading or copying ISO
+2017/12/17 01:31:00 ui:     virtualbox-iso: Downloading or copying: http://care.dlservice.microsoft.com/dl/download/1/6/F/16FA20E6-4662-482A-920B-1A45CF5AAE3C/14393.0.160715-1616.RS1_RELEASE_SERVER_EVAL_X64FRE_EN-US.ISO
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Acquiring lock to download: http://care.dlservice.microsoft.com/dl/download/1/6/F/16FA20E6-4662-482A-920B-1A45CF5AAE3C/14393.0.160715-1616.RS1_RELEASE_SERVER_EVAL_X64FRE_EN-US.ISO
+2017/12/17 01:31:00 packer.exe: 2017/12/17 01:31:00 Verifying checksum of C:\TEMP\524abd34eb2abcc5e5a12da5b1c97fa3a6a626a831c29b4e74801f4131fb08ed.iso
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 [DEBUG] Initial checksum matched, no download needed.
+2017/12/17 01:31:20 ui: ==> virtualbox-iso: Creating floppy disk...
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Floppy path: C:\Users\hlai\AppData\Local\Temp\packer243602383
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Initializing block device backed by temporary file
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Formatting the block device with a FAT filesystem...
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Initializing FAT filesystem on block device
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Reading the root directory from the filesystem
+2017/12/17 01:31:20 ui:     virtualbox-iso: Copying files flatly from floppy_files
+2017/12/17 01:31:20 ui:     virtualbox-iso: Copying file: ..\..\templates\win2k6\Autounattend.xml
+2017/12/17 01:31:20 ui:     virtualbox-iso: Copying file: ..\..\templates\win2k6\winrm.ps1
+2017/12/17 01:31:20 ui:     virtualbox-iso: Done copying files from floppy_files
+2017/12/17 01:31:20 ui:     virtualbox-iso: Collecting paths from floppy_dirs
+2017/12/17 01:31:20 ui:     virtualbox-iso: Resulting paths from floppy_dirs : []
+2017/12/17 01:31:20 ui:     virtualbox-iso: Done copying paths from floppy_dirs
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Suppressing annoying messages in VirtualBox
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"setextradata", "global", "GUI/RegistrationData", "triesLeft=0"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"setextradata", "global", "GUI/SuppressMessages", "confirmInputCapture,remindAboutAutoCapture,remindAboutMouseIntegrationOff,remindAboutMouseIntegrationOn,remindAboutWrongColorDepth"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"setextradata", "global", "GUI/UpdateCheckCount", "60"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"setextradata", "global", "GUI/UpdateDate", "1 d, 2018-01-01, stable"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 ui: ==> virtualbox-iso: Creating virtual machine...
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"createvm", "--name", "Packer-Win2k6", "--ostype", "Windows2016_64", "--register"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout: Virtual machine 'Packer-Win2k6' is created and registered.
+2017/12/17 01:31:20 packer.exe: UUID: cb0fe048-876b-42fc-b057-985d235dea01
+2017/12/17 01:31:20 packer.exe: Settings file: 'C:\Users\hlai\VirtualBox VMs\Packer-Win2k6\Packer-Win2k6.vbox'
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"modifyvm", "Packer-Win2k6", "--boot1", "disk", "--boot2", "dvd", "--boot3", "none", "--boot4", "none"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"modifyvm", "Packer-Win2k6", "--cpus", "1"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"modifyvm", "Packer-Win2k6", "--memory", "512"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 ui: ==> virtualbox-iso: Creating hard drive...
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"createhd", "--filename", "C:\\Users\\hlai\\VirtualBox VMs\\Packer-Win2k6\\Packer-Win2k6.vdi", "--size", "61440", "--format", "VDI", "--variant", "Standard"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout: Medium created. UUID: f5443717-7245-4851-bb5f-b6ccf7f6e37d
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr: 0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"storagectl", "Packer-Win2k6", "--name", "IDE Controller", "--add", "ide"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"storageattach", "Packer-Win2k6", "--storagectl", "IDE Controller", "--port", "0", "--device", "0", "--type", "hdd", "--medium", "C:\\Users\\hlai\\VirtualBox VMs\\Packer-Win2k6\\Packer-Win2k6.vdi", "--nonrotational", "off", "--discard", "off"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"storageattach", "Packer-Win2k6", "--storagectl", "IDE Controller", "--port", "0", "--device", "1", "--type", "dvddrive", "--medium", "C:\\TEMP\\524abd34eb2abcc5e5a12da5b1c97fa3a6a626a831c29b4e74801f4131fb08ed.iso"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Attaching guest additions ISO onto IDE controller...
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"storageattach", "Packer-Win2k6", "--storagectl", "IDE Controller", "--port", "1", "--device", "0", "--type", "dvddrive", "--medium", "C:/Program Files/Oracle/VirtualBox/VBoxGuestAdditions.iso"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Looking for available port between 5900 and 6000 on 127.0.0.1
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Trying port: 5995
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"modifyvm", "Packer-Win2k6", "--vrdeaddress", "127.0.0.1", "--vrdeauthtype", "null", "--vrde", "on", "--vrdeport", "5995"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Copying floppy to temp location: C:\Users\hlai\AppData\Local\Temp\packer997986530\floppy.vfd
+2017/12/17 01:31:20 ui: ==> virtualbox-iso: Attaching floppy disk...
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"storagectl", "Packer-Win2k6", "--name", "Floppy Controller", "--add", "floppy"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"storageattach", "Packer-Win2k6", "--storagectl", "Floppy Controller", "--port", "0", "--device", "0", "--type", "fdd", "--medium", "C:\\Users\\hlai\\AppData\\Local\\Temp\\packer997986530\\floppy.vfd"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 ui: ==> virtualbox-iso: Creating forwarded port mapping for communicator (SSH, WinRM, etc) (host port 2877)
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Looking for available communicator (SSH, WinRM, etc) port between 2222 and 4444
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Trying port: 2877
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"modifyvm", "Packer-Win2k6", "--natpf1", "packercomm,tcp,127.0.0.1,2877,,5985"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 ui: ==> virtualbox-iso: Executing custom VBoxManage commands...
+2017/12/17 01:31:20 ui:     virtualbox-iso: Executing: modifyvm Packer-Win2k6 --memory 2048
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"modifyvm", "Packer-Win2k6", "--memory", "2048"}
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stdout:
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 stderr:
+2017/12/17 01:31:20 ui:     virtualbox-iso: Executing: modifyvm Packer-Win2k6 --cpus 2
+2017/12/17 01:31:20 packer.exe: 2017/12/17 01:31:20 Executing VBoxManage: []string{"modifyvm", "Packer-Win2k6", "--cpus", "2"}
+2017/12/17 01:31:21 packer.exe: 2017/12/17 01:31:21 stdout:
+2017/12/17 01:31:21 packer.exe: 2017/12/17 01:31:21 stderr:
+2017/12/17 01:31:21 ui:     virtualbox-iso: Executing: modifyvm Packer-Win2k6 --nic1 nat
+2017/12/17 01:31:21 packer.exe: 2017/12/17 01:31:21 Executing VBoxManage: []string{"modifyvm", "Packer-Win2k6", "--nic1", "nat"}
+2017/12/17 01:31:21 packer.exe: 2017/12/17 01:31:21 stdout:
+2017/12/17 01:31:21 packer.exe: 2017/12/17 01:31:21 stderr:
+2017/12/17 01:31:21 ui:     virtualbox-iso: Executing: modifyvm Packer-Win2k6 --nic2 hostonly --hostonlyadapter2 VirtualBox Host-Only Ethernet Adapter
+2017/12/17 01:31:21 packer.exe: 2017/12/17 01:31:21 Executing VBoxManage: []string{"modifyvm", "Packer-Win2k6", "--nic2", "hostonly", "--hostonlyadapter2", "VirtualBox Host-Only Ethernet Adapter"}
+2017/12/17 01:31:21 packer.exe: 2017/12/17 01:31:21 stdout:
+2017/12/17 01:31:21 packer.exe: 2017/12/17 01:31:21 stderr:
+2017/12/17 01:31:21 ui: ==> virtualbox-iso: Starting the virtual machine...
+2017/12/17 01:31:21 packer.exe: 2017/12/17 01:31:21 Executing VBoxManage: []string{"startvm", "Packer-Win2k6", "--type", "gui"}
+2017/12/17 01:31:24 packer.exe: 2017/12/17 01:31:24 stdout: Waiting for VM "Packer-Win2k6" to power on...
+2017/12/17 01:31:24 packer.exe: VM "Packer-Win2k6" has been successfully started.
+2017/12/17 01:31:24 packer.exe: 2017/12/17 01:31:24 stderr:
+2017/12/17 01:31:24 ui: ==> virtualbox-iso: Waiting 10s for boot...
+2017/12/17 01:31:34 ui: ==> virtualbox-iso: Typing the boot command...
+2017/12/17 01:31:34 packer.exe: 2017/12/17 01:31:34 Waiting for WinRM, up to timeout: 12h0m0s
+2017/12/17 01:31:34 ui: ==> virtualbox-iso: Waiting for WinRM to become available...
+2017/12/17 01:31:39 packer.exe: 2017/12/17 01:31:39 [INFO] Attempting WinRM connection...
+2017/12/17 01:31:39 packer.exe: 2017/12/17 01:31:39 [DEBUG] connecting to remote shell using WinRM
