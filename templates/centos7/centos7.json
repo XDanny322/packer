@@ -58,9 +58,10 @@
     ],
     "variables": {
         "checksum": "5848f2fd31c7acf3811ad88eaca6f4aa",
+        "custom_vm_name": "",
+        "hostonly_vbox_name": "",
         "instance_count": "",
         "iso": "http://linuxsoft.cern.ch/centos/7/isos/x86_64/CentOS-7-x86_64-Minimal-1708.iso",
-        "output_dir": "",
-        "hostonly_vbox_name" : ""
+        "output_dir": ""
     }
 }

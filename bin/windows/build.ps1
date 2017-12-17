@@ -19,7 +19,7 @@ Get-ChildItem Env:PACKER_CACHE_DIR
 
 "Starting For loop for creating VMs"
 
-For ( $instance_count=1 ; $instance_count -le 1 ; $instance_count++) {
+For ( $instance_count=1 ; $instance_count -le 3 ; $instance_count++) {
 
     "Working on instance: $instance_count"
     $kickstart_file = "..\..\templates\centos7\ks.cfg"
