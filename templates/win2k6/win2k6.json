@@ -4,8 +4,8 @@
             "communicator": "winrm",
             "disk_size": "{{user `disk_size`}}",
             "floppy_files": [
-                "..\\..\\templates\\win2k6\\Autounattend.xml",
-                "..\\..\\templates\\win2k6\\winrm.ps1"
+                "{{ user `custom_autounattend` }}",
+                "{{ user `custom_winrm` }}"
             ],
             "guest_additions_mode": "{{ user `guest_additions_mode` }}",
             "guest_os_type": "Windows2016_64",
@@ -54,7 +54,9 @@
         }
     ],
     "variables": {
+        "custom_autounattend": "",
         "custom_vm_name": "",
+        "custom_winrm": "",
         "disk_size": "61440",
         "guest_additions_mode": "attach",
         "headless": "false",
