@@ -26,7 +26,7 @@ For ( $instance_count=1 ; $instance_count -le 1 ; $instance_count++) {
        -var "hostonly_vbox_name=VirtualBox Host-Only Ethernet Adapter" `
        -var "custom_autounattend=..\\..\\templates\\win2k6\\scripts\\Autounattend.xml" `
        -var "custom_winrm=..\\..\\templates\\win2k6\\scripts\\winrm.ps1" `
-       -var "custom_winrm=..\\..\\templates\\win2k6\\scripts\\enable-rpd.ps1" `
+       -var "custom_enable_rdp=..\\..\\templates\\win2k6\\scripts\\enable-rpd.ps1" `
               ..\..\templates\win2k6\win2k6.json
 
     "Done with $instance_count."
