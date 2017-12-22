@@ -16,5 +16,6 @@ do
        -var "hostonly_vbox_name=vboxnet0" \
        -var "custom_autounattend=../../templates/win2k6/scripts/Autounattend.xml" \
        -var "custom_winrm=../../templates/win2k6/scripts/winrm.ps1" \
+       -var "custom_enable_rdp=../../templates/win2k6/scripts/enable-rpd.ps1" \
           ../../templates/win2k6/win2k6.json
 done
