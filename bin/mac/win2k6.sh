@@ -10,12 +10,12 @@ echo "Starting For loop for creating VMs"
 
 for instance_count in 1 
 do
-    ./packer build -force \
-       -var "output_dir=/Users/$USER/VirtualBox VMs/Packer-win2k6-Instance-${instance_count}" \
-       -var "custom_vm_name=Packer-win2k6-Instance-${instance_count}" \
-       -var "hostonly_vbox_name=vboxnet0" \
-       -var "custom_autounattend=../../templates/win2k6/scripts/Autounattend.xml" \
-       -var "custom_winrm=../../templates/win2k6/scripts/winrm.ps1" \
-       -var "custom_enable_rdp=../../templates/win2k6/scripts/enable-rpd.ps1" \
-          ../../templates/win2k6/win2k6.json
+  ./packer build -force \
+     -var "custom_autounattend=../../templates/win2k6/scripts/Autounattend.xml" \
+     -var "custom_enable_rdp=../../templates/win2k6/scripts/enable-rdp.bat" \
+     -var "custom_vm_name=Packer-win2k6-Instance-${instance_count}" \
+     -var "custom_winrm=../../templates/win2k6/scripts/winrm.ps1" \
+     -var "hostonly_vbox_name=vboxnet0" \
+     -var "output_dir=/Users/$USER/VirtualBox VMs/Packer-win2k6-Instance-${instance_count}" \
+       ../../templates/win2k6/win2k6.json
 done
