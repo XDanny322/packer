@@ -18,14 +18,17 @@ This works with Windows and Mac OS.
 
 ## How to run on your host
 * Ensure virtual box is installed on your windows laptop|workstation.  https://www.virtualbox.org/wiki/Downloads
-* git clone this repor
+* git clone this repo
 
 * Windows:
    * Within bin/windows directory, edit `.\build.ps1`, changing the number of instance of VMs you want.  Look in the for loop please.
-   * On a power shell window, run `.\build.ps1`
+   * On a power shell window, the below, depending on the guest OS you need
+      * `.\centos.ps1`
+      * `.\win2k6.ps1`
 * Mac:
    * Within bin/mac directory, edit `./build.ps1`, changing the number of instance of VMs you want.  Look in the for loop please.
-   * run `.\build.ps1`
+      * run `./centos.sh`
+      * run `./win2k6.sh`
 
 ## Notes
 ### Packer debug mode
