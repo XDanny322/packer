@@ -18,7 +18,7 @@ Get-ChildItem Env:PACKER_CACHE_DIR
 
 "Starting For loop for creating VMs"
 
-For ( $instance_count=1 ; $instance_count -le 1 ; $instance_count++) {
+For ( $instance_count=1 ; $instance_count -le 2 ; $instance_count++) {
   .\packer.exe build -force `
      -var "custom_autounattend=..\\..\\templates\\win2k6\\scripts\\Autounattend.xml" `
      -var "custom_enable_rdp=..\\..\\templates\\win2k6\\scripts\\enable-rdp.bat" `
