@@ -1,10 +1,10 @@
 # Packer builds
-This is a quick Virtual box to packer tool, I am using to build test environments on workstations.   The idea of repo is to be able to quickly create N number of machines for testing.  As part of creating these machines, two network gets built within each VM.
+This is a quick Virtual box to packer tool, I am using to build test environments on workstations.   The idea of this repo is to be able to quickly create N number of machines for testing.  As part of creating these machines, two network gets built within each VM.
 
 * NAT network.  Each machine to use the host's network interface, to talk to the internet.  This does not allow the internet to talk to the machine.  The IP range on this is '10\*.'
 * Host-only network.  Each VM will have a 192.168.56.X ip address.  Your window workstation will also have one of these ips.  The idea is that each server, including your workstation, can talk to each other.  This is helpful if you want to test something and only need your workstation (and also not have to worry about possibility of effect other systems.)
 
-For now, even tho there are mutiple templates, only CentOS and Win2k6 is working (because it was enough for my testing).
+For now, even tho there are multiple templates, only CentOS and Win2k6 is working (because it was enough for my testing).
 
 It takes about 10-15 min per VM creation.
 
